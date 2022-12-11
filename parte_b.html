@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta name="author" content="Joel Szwarcbort">
+
+</head>
+
+<html>
+<script type="text/javascript">
+let fechaHoy=new Date();
+let diadesemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sabado"); 
+
+document.write("--------------------------------------------");
+document.write("<br>");
+//Para comenzar declaramos la variable ind
+document.write("Joel Szwarcbort - Parte B");
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+
+let nombreapellido=window.prompt("Por favor, introduzca su nombre y apellidos","");
+let dia=window.prompt("Por favor, introduzca dia de nacimiento","");
+let mes=window.prompt("Por favor, introduzca mes de nacimiento","");
+let ano=window.prompt("Por favor, introduzca año de nacimiento","");
+
+document.write("Buenos dias " + nombreapellido);
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Tu nombre tiene " +nombreapellido.length + " caracteres, incluidos espacios.");
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("La primera letra A de tu nombre está en la posición: " + (nombreapellido.indexOf("a") + 1));
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("La última letra A de tu nombre está en la posición: " + (nombreapellido.lastIndexOf("a") + 1));
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Tu nombre menos las 3 primeras letras es: " + nombreapellido.substr(3));
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Tu nombre todo en mayúsculas es: " + nombreapellido.toUpperCase());
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Tu edad es: "+ (fechaHoy.getFullYear()-ano) + " años");
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+let fechaNac=new Date(ano, mes-1,dia);
+//Mes se le resta uno porque el indice comienza en mes en 0.
+//Utilizo los metodos getday (para obtener el dia de la semana y llamo a funcion) y month con string local de españa para el mes.
+document.write("Naciste un feliz "+ (diadesemana[fechaNac.getDay()]) + " de " +  fechaNac.toLocaleString('es-ES', { month: 'long' }) + " del año "+ ano);
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("El coseno de 180 es: " + Math.cos(180));
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Ejemplo de número al azar: " + Math.random());
+document.write("<br>");
+document.write("--------------------------------------------");
+</script>
+</html>

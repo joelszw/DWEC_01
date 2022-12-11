@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta name="author" content="Joel Szwarcbort">
+
+</head>
+
+<html>
+<script type="text/javascript">
+document.write("--------------------------------------------");
+document.write("<br>");
+//Para comenzar declaramos la variable ind
+let ind;
+ind = 0;
+//Sale la table de multiplicar del 6
+document.write("Tabla de Multiplicar del 6");
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+//Utilizamos el WHILE para la tabla de multiplicar
+while (ind<=10)
+{
+ document.write("6 x " + ind + " = " + (6*ind));
+ document.write("<br>");
+ ind++;
+} 
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Tabla de sumar del 7");
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+//Utilizamos el FOR para la tabla de sumar y ponemos ind otra vez a 0
+ind = 0;
+for (ind=0;ind<=10;ind++)
+{
+ document.write("7 + " + ind + " = " + (7+ind));
+ document.write("<br>");
+} 
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Tabla de dividir del 8");
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+//Utilizamos el do ... while para la tabla de dividir y ponemos ind en 1
+ind = 1;
+do
+{
+ document.write("8 / " + ind + " = " + (8/ind));
+ document.write("<br>");
+ ind++;
+}while (ind<=10)
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Operaciones empleando desplazamiento de bits");
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("127 / 8="+ (127>>8) + "<br>");
+document.write("80 x 4 ="+ (80<<4) + "<br>");
+document.write("35 / 2 ="+ (35>>2) + "<br>");
+document.write("40 x 16="+ (40<<16) + "<br>");
+document.write("<br>");
+document.write("--------------------------------------------");
+document.write("<br>");
+document.write("Este ultimo punto no la entendi muy bien");
+document.write("<br>");
+document.write("Me guie por https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators#bit_a_bit");
+document.write("<br>");
+document.write("--------------------------------------------");
+</script>
+</html>
